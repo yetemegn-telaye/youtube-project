@@ -11,23 +11,60 @@ body{
 header{
     height: 10%;
     position: sticky;
+    padding: 10px;
     top:0;
-    background-color: aquamarine;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#search-elt{
+    height: 20px;
 }
 main{
     width: 90%;
     margin: auto;
-    border: 1px solid black;
     display: flex;
     justify-content: space-between; 
     height: 100vh;
 }
 .main-section{
     width: 60%;
-    background-color: aqua;
-  
+    padding: 10px;
 }
+
 .sidebar{
     width: 40%;
-    background-color: bisque;
+    padding-top: 10px;
+}
+.sidebar ul li{
+    display: inline;
+    padding: 10px;
+    list-style-type: none;
+}
+.sidebar ul li button{
+    width: auto;
+    padding: 7px;
+    border-radius: 12px;
+    border: none;
+}
+.sidebar ul li button:hover{
+    background-color: black;
+    color: white;
+}
+.sidebar .suggestion{
+    display: flex;
+    padding: 20px;
+   
+}
+.sidebar .suggestion img{
+    width:200px;
+    height: 100px;
+    margin-right: 10px;
+}
+.suggestion-title h3{
+    padding-bottom: 10px;
+}
+.suggestion-title p{
+    color: gray;
 }
